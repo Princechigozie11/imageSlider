@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(58, 58, 58);
+  margin-top: 100px;
+}
+.carouselContainer {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+.navigation .prev {
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  top: 40%;
+  left: 10px;
+  font-weight: 700;
+}
+.navigation .next {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  font-size: 25px;
+  font-weight: 700;
+  z-index: 10;
+}
+.navigation .navBtn {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0);
+}
+.navigation .navBtn:hover {
+  transition: 1s;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0);
+}
+.carousel {
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.carousel img {
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 8px solid rgb(255, 255, 255);
+}
+.item {
+  position: absolute;
+  display: none;
+}
+.main {
+  display: block;
+}
